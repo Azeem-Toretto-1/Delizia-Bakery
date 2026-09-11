@@ -79,6 +79,16 @@
           />
         </div>
 
+        <!-- Cart -->
+        <button
+          class="cart_button"
+          id="cart-button"
+          aria-label="Open shopping cart"
+        >
+          <i class="ri-shopping-bag-3-line"></i>
+          <span class="cart_count" id="cart-count">0</span>
+        </button>
+
         <!-- Toggle -->
         <button class="nav_toggle" id="nav-toggle" aria-label="Toggle menu">
           <i class="ri-apps-2-line"></i>
@@ -288,7 +298,7 @@
             <div class="swiper-wrapper">
               <!-- Product Cards 1  -->
               <div class="product_cards swiper-slide">
-                <article class="product_card">
+                <article class="product_card" data-product-id="strawberry-1">
                   <div class="product_images">
                     <img
                       src="./assets/img/products-blob.svg"
@@ -307,12 +317,12 @@
                     <p class="product_price">$9.99</p>
                   </div>
 
-                  <button class="product_buy" aria-label="Buy now">
+                  <button class="product_buy" aria-label="Add to cart">
                     <i class="ri-arrow-right-up-line"></i>
                   </button>
                 </article>
 
-                <article class="product_card">
+                <article class="product_card" data-product-id="strawberry-2">
                   <div class="product_images">
                     <img
                       src="./assets/img/products-blob.svg"
@@ -331,12 +341,12 @@
                     <p class="product_price">$11.99</p>
                   </div>
 
-                  <button class="product_buy" aria-label="Buy now">
+                  <button class="product_buy" aria-label="Add to cart">
                     <i class="ri-arrow-right-up-line"></i>
                   </button>
                 </article>
 
-                <article class="product_card">
+                <article class="product_card" data-product-id="strawberry-3">
                   <div class="product_images">
                     <img
                       src="./assets/img/products-blob.svg"
@@ -355,7 +365,7 @@
                     <p class="product_price">$12.99</p>
                   </div>
 
-                  <button class="product_buy" aria-label="Buy now">
+                  <button class="product_buy" aria-label="Add to cart">
                     <i class="ri-arrow-right-up-line"></i>
                   </button>
                 </article>
@@ -363,7 +373,7 @@
 
               <!-- Product Cards 2  -->
               <div class="product_cards swiper-slide">
-                <article class="product_card">
+                <article class="product_card" data-product-id="vanilla-1">
                   <div class="product_images">
                     <img
                       src="./assets/img/products-blob.svg"
@@ -382,12 +392,12 @@
                     <p class="product_price">$15.99</p>
                   </div>
 
-                  <button class="product_buy" aria-label="Buy now">
+                  <button class="product_buy" aria-label="Add to cart">
                     <i class="ri-arrow-right-up-line"></i>
                   </button>
                 </article>
 
-                <article class="product_card">
+                <article class="product_card" data-product-id="vanilla-2">
                   <div class="product_images">
                     <img
                       src="./assets/img/products-blob.svg"
@@ -406,12 +416,12 @@
                     <p class="product_price">$13.99</p>
                   </div>
 
-                  <button class="product_buy" aria-label="Buy now">
+                  <button class="product_buy" aria-label="Add to cart">
                     <i class="ri-arrow-right-up-line"></i>
                   </button>
                 </article>
 
-                <article class="product_card">
+                <article class="product_card" data-product-id="vanilla-3">
                   <div class="product_images">
                     <img
                       src="./assets/img/products-blob.svg"
@@ -430,7 +440,7 @@
                     <p class="product_price">$10.99</p>
                   </div>
 
-                  <button class="product_buy" aria-label="Buy now">
+                  <button class="product_buy" aria-label="Add to cart">
                     <i class="ri-arrow-right-up-line"></i>
                   </button>
                 </article>
@@ -438,7 +448,7 @@
 
               <!-- Product Cards 3  -->
               <div class="product_cards swiper-slide">
-                <article class="product_card">
+                <article class="product_card" data-product-id="chocolate-1">
                   <div class="product_images">
                     <img
                       src="./assets/img/products-blob.svg"
@@ -457,12 +467,12 @@
                     <p class="product_price">$17.99</p>
                   </div>
 
-                  <button class="product_buy" aria-label="Buy now">
+                  <button class="product_buy" aria-label="Add to cart">
                     <i class="ri-arrow-right-up-line"></i>
                   </button>
                 </article>
 
-                <article class="product_card">
+                <article class="product_card" data-product-id="chocolate-2">
                   <div class="product_images">
                     <img
                       src="./assets/img/products-blob.svg"
@@ -481,12 +491,12 @@
                     <p class="product_price">$18.99</p>
                   </div>
 
-                  <button class="product_buy" aria-label="Buy now">
+                  <button class="product_buy" aria-label="Add to cart">
                     <i class="ri-arrow-right-up-line"></i>
                   </button>
                 </article>
 
-                <article class="product_card">
+                <article class="product_card" data-product-id="chocolate-3">
                   <div class="product_images">
                     <img
                       src="./assets/img/products-blob.svg"
@@ -505,7 +515,7 @@
                     <p class="product_price">$20.99</p>
                   </div>
 
-                  <button class="product_buy" aria-label="Buy now">
+                  <button class="product_buy" aria-label="Add to cart">
                     <i class="ri-arrow-right-up-line"></i>
                   </button>
                 </article>
@@ -513,7 +523,7 @@
 
               <!-- Product Cards 4  -->
               <div class="product_cards swiper-slide">
-                <article class="product_card">
+                <article class="product_card" data-product-id="dried-fruit-1">
                   <div class="product_images">
                     <img
                       src="./assets/img/products-blob.svg"
@@ -532,12 +542,12 @@
                     <p class="product_price">$19.99</p>
                   </div>
 
-                  <button class="product_buy" aria-label="Buy now">
+                  <button class="product_buy" aria-label="Add to cart">
                     <i class="ri-arrow-right-up-line"></i>
                   </button>
                 </article>
 
-                <article class="product_card">
+                <article class="product_card" data-product-id="dried-fruit-2">
                   <div class="product_images">
                     <img
                       src="./assets/img/products-blob.svg"
@@ -556,12 +566,12 @@
                     <p class="product_price">$14.99</p>
                   </div>
 
-                  <button class="product_buy" aria-label="Buy now">
+                  <button class="product_buy" aria-label="Add to cart">
                     <i class="ri-arrow-right-up-line"></i>
                   </button>
                 </article>
 
-                <article class="product_card">
+                <article class="product_card" data-product-id="dried-fruit-3">
                   <div class="product_images">
                     <img
                       src="./assets/img/products-blob.svg"
@@ -580,7 +590,7 @@
                     <p class="product_price">$17.99</p>
                   </div>
 
-                  <button class="product_buy" aria-label="Buy now">
+                  <button class="product_buy" aria-label="Add to cart">
                     <i class="ri-arrow-right-up-line"></i>
                   </button>
                 </article>
@@ -588,7 +598,7 @@
 
               <!-- Product Cards 5  -->
               <div class="product_cards swiper-slide">
-                <article class="product_card">
+                <article class="product_card" data-product-id="others-1">
                   <div class="product_images">
                     <img
                       src="./assets/img/products-blob.svg"
@@ -607,12 +617,12 @@
                     <p class="product_price">$7.99</p>
                   </div>
 
-                  <button class="product_buy" aria-label="Buy now">
+                  <button class="product_buy" aria-label="Add to cart">
                     <i class="ri-arrow-right-up-line"></i>
                   </button>
                 </article>
 
-                <article class="product_card">
+                <article class="product_card" data-product-id="others-2">
                   <div class="product_images">
                     <img
                       src="./assets/img/products-blob.svg"
@@ -631,12 +641,12 @@
                     <p class="product_price">$9.99</p>
                   </div>
 
-                  <button class="product_buy" aria-label="Buy now">
+                  <button class="product_buy" aria-label="Add to cart">
                     <i class="ri-arrow-right-up-line"></i>
                   </button>
                 </article>
 
-                <article class="product_card">
+                <article class="product_card" data-product-id="others-3">
                   <div class="product_images">
                     <img
                       src="./assets/img/products-blob.svg"
@@ -655,7 +665,7 @@
                     <p class="product_price">$11.99</p>
                   </div>
 
-                  <button class="product_buy" aria-label="Buy now">
+                  <button class="product_buy" aria-label="Add to cart">
                     <i class="ri-arrow-right-up-line"></i>
                   </button>
                 </article>
@@ -871,6 +881,479 @@
         </div>
       </section>
     </main>
+
+    <!--==================== CART DRAWER ====================-->
+    <div class="cart_overlay" id="cart-overlay"></div>
+
+    <aside class="cart_drawer" id="cart-drawer">
+      <div class="cart_header">
+        <h2 class="cart_title">Your Cart</h2>
+
+        <button
+          class="cart_close"
+          id="cart-close"
+          aria-label="Close shopping cart"
+        >
+          <i class="ri-close-line"></i>
+        </button>
+      </div>
+
+      <div class="cart_content" id="cart-content">
+        <!-- Cart items will be inserted by JavaScript -->
+      </div>
+
+      <div class="cart_footer">
+        <div class="cart_total">
+          <span>Subtotal</span>
+          <strong id="cart-total">$0.00</strong>
+        </div>
+
+        <button class="cart_checkout" id="cart-checkout">
+          Checkout
+          <i class="ri-arrow-right-line"></i>
+        </button>
+
+        <button class="cart_clear" id="cart-clear">
+          <i class="ri-delete-bin-line"></i>
+          Clear Cart
+        </button>
+      </div>
+    </aside>
+
+    <!--==================== TOAST ====================-->
+    <div class="toast_container" id="toast-container"></div>
+
+    <!--==================== QUICK VIEW MODAL ====================-->
+    <div class="quick_view_overlay" id="quick-view-overlay">
+      <div
+        class="quick_view_modal"
+        id="quick-view-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="quick-view-name"
+      >
+        <button
+          class="quick_view_close"
+          id="quick-view-close"
+          type="button"
+          aria-label="Close quick view"
+        >
+          <i class="ri-close-line"></i>
+        </button>
+
+        <div class="quick_view_images">
+          <img src="" alt="" class="quick_view_img" id="quick-view-image" />
+        </div>
+
+        <div class="quick_view_data">
+          <span class="quick_view_category" id="quick-view-category"></span>
+
+          <h2 class="quick_view_name" id="quick-view-name"></h2>
+
+          <p class="quick_view_description" id="quick-view-description">
+            Freshly prepared with premium ingredients and crafted with care.
+          </p>
+
+          <p class="quick_view_price" id="quick-view-price"></p>
+
+          <div class="quick_view_actions">
+            <div class="quick_view_quantity">
+              <button
+                type="button"
+                id="quick-view-minus"
+                aria-label="Decrease quantity"
+              >
+                <i class="ri-subtract-line"></i>
+              </button>
+
+              <span id="quick-view-quantity">1</span>
+
+              <button
+                type="button"
+                id="quick-view-plus"
+                aria-label="Increase quantity"
+              >
+                <i class="ri-add-line"></i>
+              </button>
+            </div>
+
+            <button class="quick_view_add" id="quick-view-add" type="button">
+              Add to Cart
+              <i class="ri-shopping-bag-3-line"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--==================== CHECKOUT ====================-->
+    <div class="checkout_overlay" id="checkout-overlay">
+      <div
+        class="checkout_modal"
+        id="checkout-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="checkout-title"
+      >
+        <!-- Checkout Header -->
+        <div class="checkout_header">
+          <div>
+            <span class="checkout_subtitle">Delizia Bakery</span>
+            <h2 class="checkout_title" id="checkout-title">Checkout</h2>
+          </div>
+
+          <button
+            class="checkout_close"
+            id="checkout-close"
+            type="button"
+            aria-label="Close checkout"
+          >
+            <i class="ri-close-line"></i>
+          </button>
+        </div>
+
+        <!-- Checkout Content -->
+        <div class="checkout_content">
+          <!--==================== CUSTOMER DETAILS ====================-->
+          <section class="checkout_section">
+            <div class="checkout_section_title">
+              <i class="ri-user-3-line"></i>
+
+              <div>
+                <h3>Customer Details</h3>
+                <p>Enter your information to complete your order.</p>
+              </div>
+            </div>
+
+            <div class="checkout_form">
+              <!-- Full Name -->
+              <div class="checkout_field">
+                <label for="checkout-name"> Full Name </label>
+
+                <div class="checkout_input">
+                  <i class="ri-user-line"></i>
+
+                  <input
+                    type="text"
+                    id="checkout-name"
+                    placeholder="Enter your full name"
+                    autocomplete="name"
+                  />
+                </div>
+
+                <small class="checkout_error" id="checkout-name-error"></small>
+              </div>
+
+              <!-- Email -->
+              <div class="checkout_field">
+                <label for="checkout-email"> Email Address </label>
+
+                <div class="checkout_input">
+                  <i class="ri-mail-line"></i>
+
+                  <input
+                    type="email"
+                    id="checkout-email"
+                    placeholder="Enter your email"
+                    autocomplete="email"
+                  />
+                </div>
+
+                <small class="checkout_error" id="checkout-email-error"></small>
+              </div>
+
+              <!-- Phone -->
+              <div class="checkout_field">
+                <label for="checkout-phone"> Phone Number </label>
+
+                <div class="checkout_input">
+                  <i class="ri-phone-line"></i>
+
+                  <input
+                    type="tel"
+                    id="checkout-phone"
+                    placeholder="Enter your phone number"
+                    autocomplete="tel"
+                  />
+                </div>
+
+                <small class="checkout_error" id="checkout-phone-error"></small>
+              </div>
+
+              <!-- City -->
+              <div class="checkout_field">
+                <label for="checkout-city"> City </label>
+
+                <div class="checkout_input">
+                  <i class="ri-map-pin-line"></i>
+
+                  <input
+                    type="text"
+                    id="checkout-city"
+                    placeholder="Enter your city"
+                    autocomplete="address-level2"
+                  />
+                </div>
+
+                <small class="checkout_error" id="checkout-city-error"></small>
+              </div>
+
+              <!-- Address -->
+              <div class="checkout_field checkout_field_full">
+                <label for="checkout-address"> Delivery Address </label>
+
+                <div class="checkout_input checkout_textarea">
+                  <i class="ri-home-4-line"></i>
+
+                  <textarea
+                    id="checkout-address"
+                    rows="3"
+                    placeholder="Enter your complete delivery address"
+                    autocomplete="street-address"
+                  ></textarea>
+                </div>
+
+                <small
+                  class="checkout_error"
+                  id="checkout-address-error"
+                ></small>
+              </div>
+            </div>
+          </section>
+
+          <!--==================== PAYMENT ====================-->
+          <section class="checkout_section">
+            <div class="checkout_section_title">
+              <i class="ri-bank-card-line"></i>
+
+              <div>
+                <h3>Payment Method</h3>
+                <p>Choose how you'd like to pay.</p>
+              </div>
+            </div>
+
+            <div class="checkout_payment">
+              <!-- Cash on Delivery -->
+              <label class="payment_option active">
+                <input type="radio" name="payment" value="cod" checked />
+
+                <span class="payment_icon">
+                  <i class="ri-hand-coin-line"></i>
+                </span>
+
+                <span class="payment_info">
+                  <strong>Cash on Delivery</strong>
+                  <small>Pay when your order arrives</small>
+                </span>
+
+                <span class="payment_check">
+                  <i class="ri-check-line"></i>
+                </span>
+              </label>
+
+              <!-- Card Payment -->
+              <label class="payment_option">
+                <input type="radio" name="payment" value="card" />
+
+                <span class="payment_icon">
+                  <i class="ri-bank-card-line"></i>
+                </span>
+
+                <span class="payment_info">
+                  <strong>Card Payment</strong>
+                  <small>Secure online payment</small>
+                </span>
+
+                <span class="payment_check">
+                  <i class="ri-check-line"></i>
+                </span>
+              </label>
+            </div>
+          </section>
+
+          <!--==================== ORDER SUMMARY ====================-->
+          <aside class="checkout_summary">
+            <div class="checkout_summary_header">
+              <div>
+                <span>Your Cart</span>
+                <h3>Order Summary</h3>
+              </div>
+
+              <i class="ri-shopping-bag-3-line"></i>
+            </div>
+
+            <!-- Checkout Items -->
+            <div class="checkout_items" id="checkout-items">
+              <!-- Items inserted by JavaScript -->
+            </div>
+
+            <!-- Order Totals -->
+            <div class="checkout_totals">
+              <div class="checkout_total_row">
+                <span>Subtotal</span>
+                <strong id="checkout-subtotal"> $0.00 </strong>
+              </div>
+
+              <div class="checkout_total_row">
+                <span>Delivery Fee</span>
+                <strong id="checkout-delivery"> $5.00 </strong>
+              </div>
+
+              <div class="checkout_divider"></div>
+
+              <div class="checkout_total_row checkout_grand_total">
+                <span>Total</span>
+                <strong id="checkout-total"> $0.00 </strong>
+              </div>
+            </div>
+
+            <!-- Place Order -->
+            <button
+              class="checkout_place_order"
+              id="checkout-place-order"
+              type="button"
+            >
+              <span>Place Order</span>
+              <i class="ri-arrow-right-line"></i>
+            </button>
+
+            <p class="checkout_secure">
+              <i class="ri-shield-check-line"></i>
+              Secure checkout
+            </p>
+          </aside>
+        </div>
+      </div>
+    </div>
+
+    <!--==================== ORDER CONFIRMATION ====================-->
+    <div class="confirmation_overlay" id="confirmation-overlay">
+      <div
+        class="confirmation_modal"
+        id="confirmation-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="confirmation-title"
+      >
+        <!-- Close -->
+        <button
+          class="confirmation_close"
+          id="confirmation-close"
+          type="button"
+          aria-label="Close order confirmation"
+        >
+          <i class="ri-close-line"></i>
+        </button>
+
+        <!-- Success Icon -->
+        <div class="confirmation_icon">
+          <i class="ri-check-line"></i>
+        </div>
+
+        <!-- Heading -->
+        <span class="confirmation_subtitle"> Thank You! </span>
+
+        <h2 class="confirmation_title" id="confirmation-title">
+          Order Confirmed
+        </h2>
+
+        <p class="confirmation_message">
+          Your delicious order has been successfully placed. We'll prepare it
+          with love and care.
+        </p>
+
+        <!-- Order ID -->
+        <div class="confirmation_order_id">
+          <span>Order ID</span>
+          <strong id="confirmation-order-id"> — </strong>
+        </div>
+
+        <!-- Customer -->
+        <div class="confirmation_customer">
+          <div class="confirmation_customer_icon">
+            <i class="ri-user-3-line"></i>
+          </div>
+
+          <div>
+            <span>Customer</span>
+            <strong id="confirmation-customer-name"> — </strong>
+          </div>
+        </div>
+
+        <!-- Order Details -->
+        <div class="confirmation_details">
+          <!-- Items -->
+          <div class="confirmation_detail">
+            <div class="confirmation_detail_icon">
+              <i class="ri-shopping-bag-3-line"></i>
+            </div>
+
+            <div>
+              <span>Items</span>
+              <strong id="confirmation-items"> — </strong>
+            </div>
+          </div>
+
+          <!-- Payment -->
+          <div class="confirmation_detail">
+            <div class="confirmation_detail_icon">
+              <i class="ri-bank-card-line"></i>
+            </div>
+
+            <div>
+              <span>Payment</span>
+              <strong id="confirmation-payment"> — </strong>
+            </div>
+          </div>
+
+          <!-- Total -->
+          <div class="confirmation_detail">
+            <div class="confirmation_detail_icon">
+              <i class="ri-money-dollar-circle-line"></i>
+            </div>
+
+            <div>
+              <span>Total</span>
+              <strong id="confirmation-total"> — </strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Address -->
+        <div class="confirmation_address">
+          <div class="confirmation_address_icon">
+            <i class="ri-map-pin-line"></i>
+          </div>
+
+          <div>
+            <span>Delivery Address</span>
+            <p id="confirmation-address">—</p>
+          </div>
+        </div>
+
+        <!-- Continue -->
+        <button
+          class="confirmation_button"
+          id="confirmation-button"
+          type="button"
+        >
+          Continue Shopping
+          <i class="ri-arrow-right-line"></i>
+        </button>
+
+        <p class="confirmation_secure">
+          <i class="ri-shield-check-line"></i>
+          Order saved securely on this device
+        </p>
+      </div>
+    </div>
+
+    <!-- Confetti -->
+    <div
+      class="confetti_container"
+      id="confetti-container"
+      aria-hidden="true"
+    ></div>
 
     <!--==================== FOOTER ====================-->
     <footer class="footer">
